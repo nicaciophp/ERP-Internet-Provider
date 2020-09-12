@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $(".enviarForm").click(function(){
+        $(".enviarForm").hide();
+        $( ".enviarAviso" ).show(  function() {
+          $( this ).text( "Aguarde..." );
+        });
+        
+    });
+});
+$( this ).html( "<b>Aguarde...</b>" );
+</script>
+</head>
+<body>
+<span class="enviarAviso"></span>
+<button type="submit" name="salva" class="enviarForm">Salvar</button>
+
+</body>
+</html>
